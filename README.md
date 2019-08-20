@@ -22,9 +22,9 @@ example.com
 │     ├── scripts
 │     |  └── main.js
 │     └── styles
-|				 ├── mixins
-|				 |  └── _breakpoints.scss
-|				 ├── _fonts.scss
+|        ├── mixins
+|        |  └── _breakpoints.scss
+|        ├── _fonts.scss
 │        └── main.scss
 ├── node_modules
 ├── index.html

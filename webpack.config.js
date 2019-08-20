@@ -1,16 +1,19 @@
 const path = require("path");
-
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== "production";
+
+// Defines the plugins for file compiling
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const FontminPlugin = require("fontmin-webpack");
 
 module.exports = {
+  // Defines the files that will be compressed and compiled
   entry: {
-    script: ["./assets/src/scripts/main.js"],
-    style: ["./assets/src/styles/main.scss"]
+    script: "./assets/src/scripts/main.js",
+    style: "./assets/src/styles/main.scss"
   },
+  // What the compiled files names and locations will be
   output: {
     filename: "[name].min.js",
     path: path.resolve(__dirname, "assets/dist")
@@ -41,11 +44,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              // you can specify a publicPath here
-              // by default it uses publicPath in webpackOptions.output
-              // publicPath: 'dist',
               hmr: process.env.NODE_ENV === "development",
-              // minimize: true,
               reloadAll: true
             }
           },
@@ -67,10 +66,6 @@ module.exports = {
       }
     ]
   },
-  stats: {
-    colors: true
-  },
-  // devtool: 'source-map',
   externals: {
     jquery: "jQuery"
   },

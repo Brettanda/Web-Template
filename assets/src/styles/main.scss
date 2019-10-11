@@ -22,11 +22,13 @@
 // ------------
 // 1. Variables
 // ------------
-$red: red;
+
+$red: #f00;
 
 $color-body: $red;
 
 //** Break Points **//
+
 $breakpoints: (
   "xs": 600px,
   "sm": 800px,
@@ -37,9 +39,11 @@ $breakpoints: (
 
 //** Font Families **//
 // Fall Back Fonts (System)
+
 $font-family-fallback: system, -apple-system, ".SFNSText-Regular",
   "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
   sans-serif;
+
 $font-family-fallback-serif: Constantia, "Lucida Bright", Lucidabright,
   "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif",
   "Liberation Serif", Georgia, serif;
@@ -47,6 +51,7 @@ $font-family-fallback-serif: Constantia, "Lucida Bright", Lucidabright,
 // Custom Font Family Declarations
 // 'Ayustina' left as an example custom font family
 // Used: `font-family: $font-body;
+
 $font-family-chronicle: "ChronicleDisplay-LightItalic",
   $font-family-fallback-serif;
 
@@ -55,11 +60,13 @@ $font-family-: "", $font-family-fallback;
 // Abstract Font Family References (i.e., easy to swap)
 // $font-accent: $font-family-chronicle;
 // $font-heading: $font-family-roboto-bold;
+
 $font-body: $font-family-;
 
 // ---------
 // 2. Mixins
 // ---------
+
 @import "mixins/_breakpoints.scss";
 
 // -----------------
@@ -72,12 +79,14 @@ $font-body: $font-family-;
 // ---------------------
 
 //** Normalize the styles for all browsers. **//
+
 @import "~normalize.css/normalize.css";
 
 // -------------
 // 5. Typography
 // -------------
 // Base font styles applied to the <body>
+
 .typography {
   font-family: $font-body;
   font-size: 100%;
@@ -110,6 +119,7 @@ h6 {
 // }
 
 $t-xxxl: 4rem;
+
 .t-xxxl {
   // 64px
   font-size: $t-xxxl;
@@ -117,6 +127,7 @@ $t-xxxl: 4rem;
 }
 
 $t-xxl: 3rem;
+
 .t-xxl {
   // ~48px
   font-size: $t-xxl;
@@ -124,6 +135,7 @@ $t-xxl: 3rem;
 }
 
 $t-xl: 2rem;
+
 .t-xl {
   // ~28px
   font-size: $t-xl;
@@ -131,12 +143,14 @@ $t-xl: 2rem;
 }
 
 $t-lg: 1.5rem;
+
 .t-lg {
   // ~24px
   font-size: $t-lg;
 }
 
 $t-md: 1.25rem;
+
 .t-md {
   // ~20px
   font-size: $t-md;
@@ -148,24 +162,28 @@ $t-md: 1.25rem;
   font-size: 1rem;
 }
 $t-sm: 1.125rem;
+
 .t-sm {
   // ~18px
   font-size: $t-sm;
 }
 
 $t-xs: 0.875rem;
+
 .t-xs {
   // ~14px
   font-size: $t-xs;
 }
 
 $t-xxs: 0.625rem;
+
 .t-xxs {
   // ~10px
   font-size: $t-xxs;
 }
 
 // Text Case
+
 .t-uppercase {
   text-transform: uppercase;
 }
@@ -175,6 +193,7 @@ $t-xxs: 0.625rem;
 }
 
 // Text Colours
+
 .t-red {
   color: $red;
 }
@@ -190,9 +209,10 @@ $t-xxs: 0.625rem;
 // ---------------
 // 8. Scoped Pages
 // ---------------
+
 .page-404 {
   h1 {
-    color: red;
+    color: $red;
   }
 }
 
@@ -201,17 +221,20 @@ $t-xxs: 0.625rem;
 // ------------
 
 //** List Reset **//
+
 .u-list-reset {
   list-style: none;
   padding-inline-start: 0;
 }
 
 //** Hidden **//
+
 .u-hidden {
   display: none;
 }
 
 //** Hidden but Accessible **//
+
 .u-hidden--visually {
   clip-path: inset(100%);
   clip: rect(1px 1px 1px 1px); /* IE 6/7 */

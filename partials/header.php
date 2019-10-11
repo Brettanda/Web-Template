@@ -4,11 +4,6 @@
     <meta charset="utf-8" />
     <title>This is a template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/dist/style.min.css" />
+    <link rel="stylesheet" href="assets/dist/styles/main.css" />
   </head>
   <body>
-    <h1>This is a template</h1>
-    <p>Welcome</p>
-    <script src="assets/dist/script.min.js"></script>
-  </body>
-</html>

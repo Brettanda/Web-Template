@@ -4,10 +4,13 @@ This is a basic web development template with webpack.
 
 ## Default Features
 
-- Webpack
+- Laravel Mix
+- Vagrant
 - Normalize.css
 - JQuery
 - Prettier
+- Eslint
+- Stylelint
 - SASS/SCSS Loaders
 
 ## File system
@@ -15,7 +18,7 @@ This is a basic web development template with webpack.
 ```
 example.com
 ├── assets
-|	 ├── dist
+|  ├── dist
 │  └── src
 │     ├── fonts
 │     ├── plugins

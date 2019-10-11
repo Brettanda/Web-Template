@@ -1,0 +1,33 @@
+{
+  "name": "brettanda/web-template",
+  "type": "project",
+  "description": "A basic web development template for all kinds of projects",
+  "authors": [
+    {
+      "name": "Brett Anda",
+      "email": "brettanda12@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Brettanda\\Project\\": "scripts/src"
+    }
+  },
+  "require": {
+    "composer/installers": "^1.6"
+  },
+  "require-dev": {
+    "laravel/homestead": "^7.6.2",
+    "roave/security-advisories": "dev-master",
+    "symfony/filesystem": "^4.1",
+    "symfony/yaml": "^3.4"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {}
+}

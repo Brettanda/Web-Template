@@ -1,5 +1,11 @@
-/node_modules
-*.lock
+node_modules
 *-error.log
-/vscode
-*/dist
+vscode
+.vscode
+dist
+vendor
+.vagrant
+
+*.zip
+*.gz
+*.sql

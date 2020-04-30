@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@swup/preload-plugin": "^1.0.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.0",
     "prismjs": "^1.17.1",
     "swup": "^2.0.7"

@@ -42,7 +42,7 @@
     "@swup/preload-plugin": "^1.0.3",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.0",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.21.0",
     "swup": "^2.0.7"
   },
   "devDependencies": {
